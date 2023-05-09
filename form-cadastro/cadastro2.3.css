@@ -1,0 +1,124 @@
+@media screen and (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mirza&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+
+    @font-face {
+        font-family: montserrat;
+        src: url(./assets/fonts/Montserrat_Alternates/MontserratAlternates-BoldItalic.ttf);
+    }
+
+    html,
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #F5F1EF;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #262626;
+        width: 100vw;
+        height: 35px;
+    }
+
+    header p {
+        margin-left: 5px;
+        font-family: montserrat;
+        font-size: 16px;
+        font-weight: 900;
+        color: white;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F5F1EF;
+        width: 30vw;
+        height: 75vh;
+        box-shadow: 5px 6px 60px 0px rgba(128, 128, 128, 0.5);
+        border-radius: 16px;
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 1.5rem;
+        /* border: 1px solid blue; */
+    }
+
+    .login button {
+        font-family: 'Mirza', cursive;
+    }
+
+    button {
+        max-width: 225px;
+        max-height: 35px;
+        width: 65vw;
+        height: 75vh;
+        border-radius: 8px;
+        background-color: #262626;
+        color: white;
+        box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+        cursor: pointer;
+    }
+
+    button:active{
+        transform: scale(.9);
+    }
+
+    input {
+        max-width: 225px;
+        max-height: 35px;
+        width: 65vw;
+        height: 75vh;
+        border-radius: 8px;
+        border: 3px solid #262626;
+        padding: 10px;
+    }
+
+    form span {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .h2Meio {
+        font-weight: 100;
+        font-size: 1rem;
+        opacity: 0.65;
+        color: #666666;
+        font-family: 'Mukta Vaani', sans-serif;
+    }
+
+    .buttonTech {
+        background-color: transparent;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
