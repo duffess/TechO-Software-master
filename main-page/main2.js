@@ -1,11 +1,12 @@
-var addPersonIcon = document.querySelector('.addTask');
-var sidebar = document.querySelector('.sidebar');
-
+let addPersonIcon = document.querySelector('.addTask');
+let sidebar = document.querySelector('.sidebar');
+let i = 0;
 
 addPersonIcon.addEventListener('click', function(){
-    var divPerson = document.createElement('div');
-    var imgElement = document.createElement('p');
-    imgElement.textContent = "P1"
+    let divPerson = document.createElement('div');
+    let imgElement = document.createElement('p');
+    i++
+    imgElement.textContent = `P${i}`
     divPerson.className = "adcTask"
     divPerson.appendChild(imgElement);
     sidebar.appendChild(divPerson);
