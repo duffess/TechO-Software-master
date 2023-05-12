@@ -1,8 +1,15 @@
-var addPersonIcon = document.querySelectorAll('.addTask')
+var addPersonIcon = document.querySelector('.addTask');
+var sidebar = document.querySelector('.sidebar');
 
-addPersonIcon.addEventListener('click', function (){
+
+addPersonIcon.addEventListener('click', function(){
     var divPerson = document.createElement('div');
-    var divPersonNode = document.createTextNode('Texto de teste');
-    console.log(divPerson);
-    console.log(divPersonNode);
+    var imgElement = document.createElement('p');
+    imgElement.textContent = "P1"
+    divPerson.className = "adcTask"
+    divPerson.appendChild(imgElement);
+    sidebar.appendChild(divPerson);
+    // console.log(divPerson);
+    // console.log(imgElement);
 })
+
